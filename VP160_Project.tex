@@ -1,0 +1,106 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{indentfirst}
+\usepackage{chngpage}
+\setlength{\parindent}{2em}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{geometry}
+\usepackage{multirow}
+\usepackage{authblk}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+%\usepackage{ctex}
+\usepackage{color}
+\usepackage{enumerate}
+\usepackage{graphics}
+\geometry{left=3.5cm,right=3.5cm,top=3.5cm,bottom=3.5cm}
+%\usepackage[pdftex]
+
+%\subsection{}
+%\subsubsection{•}
+%
+%
+%\indent 首行缩进并且在“\\”另起一行\\
+%
+%
+%$$F = F_0(sin\omegat + \delta)$$%数学模式
+%
+%
+%\begin{equation}
+%I\frac{d^2\theta}{dt^2}=-k\theta-b\frac{d\theta}{dt}+\tau_0cos\omega t
+%\end{equation}%这种可以自动编号
+%
+%
+%%插入jpg图片
+%\begin{figure}[H]%这个H一定要有
+%\centering
+%\includegraphics[width=2in,height=1.75in]{1.jpg}
+%%\label{Figure.1}
+%\end{figure}
+%
+%\begin{center}%这个可以把一部分东西居中
+%Figure.1\\
+%\end{center}
+%
+%%表格用https://www.tablesgenerator.com/
+\title{Physics Laboratory\\[2ex]
+\begin{center}
+VP160 Project\\
+Numerical solution of Newton's equations of motion\\
+Group 26
+\end{center}
+}
+
+\author{Liu Zhendong\\
+Yuan Yin 517370910260\\
+Zhang Xiuqi\\Zhou Zikun}
+
+\begin{document} \maketitle
+\begin{center}
+
+We state that each of us has contributed equally to this project.\\
+Signature:
+\end{center}
+\newpage % START THE DOCUMENT!
+
+\section{Introduction}
+\section{Problems}
+\subsection{Projectile motion with air drag}
+\subsubsection{Projectile motion being solved}
+From paragraph 1-4 we consider the problem of a 2D projectile of mass m = 1 kg moving with a linear drag, moving close to the Earth’s surface. The equation of motion in this problem is\\
+$$
+\ddot{r}=-g-kv
+$$
+where κ = k/m and k is the drag coefficient. We assume that the projectile starts out at the origin with velocity $v_0 = 90 m/s$ at an angle $\alpha$ to the horizontal.\\
+\paragraph{(1) Recursive Equations For Velocity and Position of Projectile Given By the Euler Method}
+\paragraph{(2) Examination whether the numerical result is sensitive to the choice of the step $\Delta t$}
+\paragraph{(3) Choosing appropriate value of the step and solve the problem numerically for five different $\alpha$.}
+\paragraph{(4) Solving the problem numerically for five different drag coefficient k.}
+\subsubsection{Projectile motion being solved}
+From paragraph 5-9, we suppose that the same particle is subject to a quadratic drag. That is, its equation of motion reads\\
+$$
+\ddot{r} = -g- \beta |v| v
+$$
+where $\beta = b/m$ and b is the drag coefficient. We assume again that the projectile starts out at the origin with velocity $v_0 = 90 m/s$ at an angle $\alpha$ to the horizontal.\\
+\paragraph{(5) Recursive equations for velocity and position of the projectile.}
+\paragraph{(6) Examination whether the numerical result is sensitive to the choice of the step $\Delta t$ for fixed initial conditions.}
+\paragraph{(7) Choosing appropriate value of the step and solve the problem numerically for five different $\alpha$.}
+\paragraph{(8) Solving the problem numerically for five different drag coefficient k.}
+\paragraph{(9) The trajectories of a projectile with different drag conditions}
+\subsection{Simple harmonic oscillator}
+\subsubsection{Projectile motion being solved}
+In this part we numerically solve the equation of motion of the 1D simple harmonic
+oscillator $\ddot{x} = −{\omega_0}^2x$, with the initial conditions $x(0) = 0.5 m$ and $v_x(0) = 1 m/s$. Assume the natural angular frequency $\omega_0 = 1.5 s−1$.\\
+\paragraph{(1) Recursive equations for velocity and position of the projectile.}
+\paragraph{(2) Examination whether the numerical result is sensitive to the choice of the step $\Delta t$ for fixed initial conditions.}
+\paragraph{(3) Calculation and graph of E(t)}
+\paragraph{(4) Recursive second-order Runge-Kutta equations for vi and xi}
+\paragraph{(5) Condition if choosing the worst–performing step size $\Delta t$ }
+\section{Accuracy of Numerical Methods}
+
+\subsection{Factors Limiting the Accuracy of Numerical Methods}
+
+\subsection{Order of Runge-Kutta method and Euler method}
+
+\end{document}
